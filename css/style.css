@@ -1,54 +1,14 @@
-/* Reset CSS MeyerWeb.com para comportamento inicial do site*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+/* Reset CSS para comportamento inicial do site*/
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
 body {
-	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* Cabeçalho*/
 .cabecalho {
     /* largura de 100%, flutuar a esquerda, distancia da parte superior e base 50px, 8px dos lados e cor de fundo*/
@@ -56,7 +16,7 @@ table {
 }
 .logo a {
     /* largura 221px e altura 48px, flutuar a esquerda, background: url()não-repetr e esconder o texto com fonte tamanho 0 */
-    width: 221px; height: 48; float: left; background: url(../img/logo.png) no-repeat; padding: 25px 0px; font-size: 0;
+    width: 221px; height: 48; float: left; background: url(../img/logo.svg) no-repeat; padding: 25px 0px; font-size: 0;
 }
 .cabecalho form {
     /* formulario com 30% de largura e flutuando a direita*/
@@ -64,19 +24,18 @@ table {
 }
 .cabecalho input[type="text"] {
     /*Caixa de texto do formulario com largura de 85% em relação aos tamanho do header
-    flutuando a esquerda distancia de 15px no topo e base e 10px nos lados*/
-    width: 79%; float: left; padding: 13px 10px;
+    flutuando a esquerda distancia de 15px no topo e base e 10px nos lados, arredondei a caixa de texto nos lados*/
+    width: 79%; float: left; padding: 13px 10px; border-radius: 5px 0px 0px 5px; border:none
 }
 .cabecalho button {
     /* Largura de 15% em relação ao header, juntando com o input completando os 100%
     flutuando a direita da caixa de texto, espaçamento ou distância 15px base e topo e 10 px nos lados
     cor de fundo e cor da fonte */
-    width: 15%; float: right; padding: 15px 10px; background-color: #13b7ae; color: #fff; cursor: pointer; border:none
-}
+    width: 15%; float: right; padding: 13px 10px; background-color: #108d87; color: #fff; cursor: pointer; border:none; border-radius: 0px 5px 5px 0px;}
 /*Nav Menu de Navegação*/
 .menu {
     /*Largura de 100%, flutuar a esquerda, cor de fundo, espaçamento 18px topo/base e 8% laterais*/
-    width: 98.8%; float: left; background-color: #111; padding: 18px 8px; font-family: 'Open Sans', sans-serif;
+    width: 98.8%; float: left; background-color: #111; padding: 18px 8px;
 }
 .menu li {
     /*flutuar a esquerda, */
@@ -110,4 +69,70 @@ table {
 .social-icons .btn-instagram:hover {
     /*Usando a pseudo classe hover*/
     color: #e95950;
+}
+/*Main e Article (Sobre nós)*/
+
+.principal {
+/*largura de 100% da pagina, flutuar a esquerda, espaçamento de 20px por 8%*/
+width: 84%; float: left; padding: 20px 8%; background-color: #f5f5f5;
+}
+.sobre {
+    /*Largura de 70%, flutuar a esquerda e espaçamento de 0px 20px 20px 0px*/
+    width: 65%; float: left; padding-right: 10px;
+}
+.sobre h2 {
+    margin-bottom: 15px;
+}
+.sobre img {
+    /*largura de 50% em relação a classe sobre, flutuar a esquerda, borda arredondada e margem a direita*/
+    width: 40%; float: left; border-radius: 5px; margin: 0px 15px 15px 0px;
+}
+
+/*Aside (Onde estamos)*/
+.onde-estamos {
+    /*Largura de 30%, flutuar a direita, espaçamento de 10px e 20px, cor de fundo #f5f5f5 e borda arredondada*/
+    width: 30%; float: right; padding: 10px 20px; border-radius: 5px;   
+}
+.onde-estamos h2 {
+    /*Margem em baixo 5px*/
+    margin-bottom: 5px;
+}
+.onde-estamos li {
+    /*cor da fonte e Margem em baixo 10px*/
+    color: rgb(82, 80, 80); margin-bottom: 10px;
+}
+.onde-estamos i {
+    /*Margem a direita 10px*/
+    margin-right: 10px;
+}
+
+    /*Section (Newsletter)*/
+.newsletter {
+    /*Largura de 78%, flutuar a esquerda, cor de fundo #111, espaçamento 50px 8%*/
+    width: 84%; float: left; background-color: #111; padding: 50px 8%; text-align: center;
+}
+.newsletter h3 {
+    /*tamanho da fonte em 1.8em cor da fonte em #fff*/
+    font-size: 1.8em; color: #fff;
+}
+.newsletter p {
+    /*tamanho da fonte em 1.2em cor da fonte em #fff*/
+    font-size: 1.2em; color: #fff; margin-bottom: 30px;
+} 
+.newsletter input[type="text"]  {
+    /*espaçamento, margem a direita e arredondamento*/
+    font-size: 20px; padding: 15px 100px; margin-right: 10px; border-radius: 5px; background-color:initial; border: #fff solid 2px;
+}
+.newsletter input[type="email"]  {
+    /*espaçamento, margem a direita e arredondamento*/
+    font-size: 20px; padding: 15px 100px; margin-right: 10px; border-radius: 5px; background-color:initial; border: #fff solid 2px;
+}
+.newsletter button {
+    /*espaçamento e arredondamento*/
+    padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 21.5px;
+}
+
+/*RODAPÉ*/
+.rodape {
+    padding: 50px 8%; color: #fff; background-color: #13c7ae; text-align: center;
 }
