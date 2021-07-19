@@ -17,6 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+    font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -51,7 +52,7 @@ table {
 /* Cabeçalho*/
 .cabecalho {
     /* largura de 100%, flutuar a esquerda, distancia da parte superior e base 50px, 8px dos lados e cor de fundo*/
-    width: 98.8%; float: left; padding: 50px 8px; background-color: #13c7ae;
+    width: 98.8%; float: left; padding: 50px 8px; background-color: #13c7ae; 
 }
 .logo a {
     /* largura 221px e altura 48px, flutuar a esquerda, background: url()não-repetr e esconder o texto com fonte tamanho 0 */
@@ -64,11 +65,49 @@ table {
 .cabecalho input[type="text"] {
     /*Caixa de texto do formulario com largura de 85% em relação aos tamanho do header
     flutuando a esquerda distancia de 15px no topo e base e 10px nos lados*/
-    width: 79%; float: left; padding: 15px 10px;
+    width: 79%; float: left; padding: 13px 10px;
 }
 .cabecalho button {
     /* Largura de 15% em relação ao header, juntando com o input completando os 100%
     flutuando a direita da caixa de texto, espaçamento ou distância 15px base e topo e 10 px nos lados
     cor de fundo e cor da fonte */
-    width: 15%; float: right; padding: 15px 10px; background-color: #13c7ae; color: #fff; cursor: pointer; border-color: white;
+    width: 15%; float: right; padding: 15px 10px; background-color: #13b7ae; color: #fff; cursor: pointer; border:none
+}
+/*Nav Menu de Navegação*/
+.menu {
+    /*Largura de 100%, flutuar a esquerda, cor de fundo, espaçamento 18px topo/base e 8% laterais*/
+    width: 98.8%; float: left; background-color: #111; padding: 18px 8px; font-family: 'Open Sans', sans-serif;
+}
+.menu li {
+    /*flutuar a esquerda, */
+    float: left;
+}
+.menu li a {
+    /*cor da fonte #9d9d9d, margem a direita 25px*/
+    color: #9d9d9d; margin-right: 25px; text-decoration: none;
+}
+.menu li a:hover {
+    /*Usando a pseudo classe hover*/
+    color: #fff;
+}
+
+.social-icons {
+    /*flutuar a direita, margem a direita de 50px */
+    float: right; margin-right: 50px;
+}
+.social-icons a {
+    /*cor da fonte #9d9d9d, margem a direita 25px*/
+    color: #9d9d9d; margin-right: 25px;
+}
+.social-icons .btn-facebook:hover {
+    /*Usando a pseudo classe hover*/
+    color: #3b5998;
+}
+.social-icons .btn-twitter:hover {
+    /*Usando a pseudo classe hover*/
+    color: #00acee;
+}
+.social-icons .btn-instagram:hover {
+    /*Usando a pseudo classe hover*/
+    color: #e95950;
 }
